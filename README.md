@@ -49,11 +49,14 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 pip install -r requirements.txt
 ```
 
-### 3. Start the Backend
+### 3. Start the Server
 ```bash
 cd test
 python manage.py runserver
 ```
+
+### 4. Start the Ganache application
+
 
 ## Smart Contracts
 
