@@ -49,48 +49,11 @@ source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 pip install -r requirements.txt
 ```
 
-#### Frontend (React)
+### 3. Start the Backend
 ```bash
-cd frontend
-npm install
-```
-
-#### Smart Contracts (Hardhat)
-```bash
-cd blockchain
-npm install
-```
-
-### 3. Deploy Smart Contracts
-```bash
-npx hardhat compile
-npx hardhat run scripts/deploy.js --network goerli  # Use the appropriate network
-```
-
-### 4. Configure Environment Variables
-Create a `.env` file in the `backend/` directory and add:
-```env
-SECRET_KEY=your_django_secret_key
-DATABASE_URL=mongodb+srv://username:password@cluster.mongodb.net/
-INFURA_PROJECT_ID=your_infura_project_id
-PRIVATE_KEY=your_wallet_private_key
-CONTRACT_ADDRESS=your_deployed_contract_address
-IPFS_API_KEY=your_ipfs_key
-```
-
-### 5. Start the Backend
-```bash
-cd backend
+cd test
 python manage.py runserver
 ```
-
-### 6. Start the Frontend
-```bash
-cd frontend
-npm start
-```
-
----
 
 ## Smart Contracts
 
